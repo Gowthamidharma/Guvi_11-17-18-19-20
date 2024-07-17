@@ -1,4 +1,4 @@
-package javamaven1;
+package task11;
 
 import java.util.Scanner;
 
@@ -18,9 +18,7 @@ public class Task11Agevalidation {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter your age ");
-		int age =sc.nextInt();
-		
-		
+		int age =sc.nextInt();	
 		
 		try{
 			validateAge(age);

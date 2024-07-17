@@ -1,4 +1,4 @@
-package javamaven1;
+package task11;
 
 public class Task11stringindex {
 

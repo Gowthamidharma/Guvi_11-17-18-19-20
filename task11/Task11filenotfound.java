@@ -1,4 +1,4 @@
-package javamaven1;
+package task11;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -16,9 +16,11 @@ public class Task11filenotfound {
 		BufferedReader br =new BufferedReader(reader);
 		
 		//declaring empty string passing null
+		
 		String data = null;
 		
 		// while loop to read print data
+		
 		while((data= br.readLine())!=null)
 		{
 			System.out.println(data);			

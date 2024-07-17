@@ -1,4 +1,4 @@
-package javamaven1;
+package task11;
 
 import java.util.Scanner;
 
@@ -9,29 +9,29 @@ public class Task11int {
 
 		try
 		{
-			// declare .
+			// declare 
 			int a,b,c;
 			
-			Scanner KB  = new Scanner(System.in);
+			Scanner sc  = new Scanner(System.in);
 			
 			// input numbers here.
 			System.out.print("Enter first number : ");
-			a=KB.nextInt();
+			a=sc.nextInt();
        
 			System.out.print("Enter second number : ");
-			b=KB.nextInt();
+			b=sc.nextInt();
 			
-			KB.close();
+			sc.close();
 			
        
 			//throw to catch
 			c=a/b;
-			System.out.println("Result:"+c);
-		}
+			System.out.println("Result: "+c);
+			}
 		catch(ArithmeticException e)
-		{
+			{
 			System.out.println("Cant divide number  "+e.getMessage());
-			System.out.println("Error:"+e);
+			System.out.println("Error: "+e);
 		}
 		
 	}

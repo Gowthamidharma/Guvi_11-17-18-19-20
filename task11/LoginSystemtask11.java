@@ -1,4 +1,4 @@
-package javamaven1;
+package task11;
 
 import java.util.Scanner;
 
@@ -44,7 +44,7 @@ public class LoginSystemtask11 {
 		
 		try {			
 		   obj.login(username, password);
-		   System.out.println("Sucessful login");
+		   System.out.println("Sucessful loginAd");
 			
 		} catch (Incorrectpasswordexception e) {
 			System.out.println("Error: " + e.getMessage());

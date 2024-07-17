@@ -1,4 +1,4 @@
-package javamaven1;
+package task18;
 
 import java.time.Duration;
 
@@ -52,29 +52,24 @@ public class Fbtask18 {
 		Select y  = new Select(year);
 		y.selectByValue("1985");
 		
+		// locate gender
 		driver.findElement(By.xpath("//label[text()='Female']")).click();
 		
-		// click signin
-		
+		// click signin		
 		driver.findElement(By.name("websubmit")).click();
 		
-		//verify and validate the login
-		
-		
+		//verify and validate the login		
 		String Expectedtext ="Gowthami Dharmalingam";
 		String actualurl =	driver.findElement(By.xpath("//span[text()='Gowthami Dharmalingam']")).getText();
 		
 		
 		if(Expectedtext.equalsIgnoreCase(actualurl)) {
-			System.out.println("Sucessful login");
-			
+			System.out.println("Sucessful login");			
 		}else {
 			System.out.println("UnSucessful login");
 		}
 		
-		//driver.close();
-		
-			
+		//driver.close();		
 		
 		}
 

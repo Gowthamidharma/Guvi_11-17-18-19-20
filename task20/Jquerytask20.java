@@ -1,10 +1,8 @@
-package javamaven1;
+package task20;
 
 import java.time.Duration;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
@@ -29,37 +27,34 @@ public class Jquerytask20 {
 				
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 				
-				//switch to frame
 				
-				
+				//switch to frame				
 				driver.switchTo().frame(0);
 				
-				// date picker textbox
-								
+				
+				// date picker textbox								
 				driver.findElement(By.id("datepicker")).click();
 				
-				//next arrow
 				
-				
+				//next arrow				
 				driver.findElement(By.xpath("//span[text()='Next']")).click();	
 				
-				//22nd date on calendar 
 				
-				
+				//22nd date on calendar 				
 				 driver.findElement(By.xpath("//a[normalize-space()='22']")).click();
 				 
-				 // get text of the selected date and print				
 				
-				 String date = driver.findElement(By.xpath("//a[normalize-space()='22']")).getText();
+				 // get text of the selected date and print				
+				String date = driver.findElement(By.xpath("//a[normalize-space()='22']")).getText();
 				
 				System.out.println("The  current date on calender = " + date + "nd August 2024");
 				
 				// close the current active window 				
-				driver.close();
+				//driver.close();
 				
-				// close the driver
 				
-				driver.quit();
+				// close the driver				
+				//driver.quit();
 				
 	}
 
